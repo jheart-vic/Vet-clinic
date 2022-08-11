@@ -24,8 +24,11 @@ CREATE TABLE owners (
 CREATE TABLE species (
   id serial PRIMARY KEY,
   full_name varchar(100),
-  age int
 );
 
 ALTER TABLE animals
   ADD species_id int
+
+  ALTER TABLE animals ADD species_id int REFERENCES species(id);
+
+ALTER TABLE animals ADD owner_id int REFERENCES owners(id);
