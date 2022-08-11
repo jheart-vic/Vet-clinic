@@ -33,3 +33,15 @@ VALUES ('Blossom', 'October 13, 1998', 3, TRUE, 17);
 INSERT INTO animals  (name, date_of_birth, escape_attempts, neutered, weight_kg) 
 VALUES ('Ditto', 'May 14, 2022', 4, TRUE, 22);
 
+INSERT INTO owners (full_name, age)
+VALUES ('Sam Smith', 34),
+  ('Jennifer Orwell', 19),
+  ('Bob', 45),
+  ('Melody Pond', 77),
+  ('Dean Winchester', 14),
+  ('Jodie Whittaker', 38);
+
+
+INSERT INTO species (name)
+VALUES ('Pokemon'), ('Digimon');
+
