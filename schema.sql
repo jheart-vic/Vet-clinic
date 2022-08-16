@@ -63,3 +63,12 @@ ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 ALTER TABLE visits RENAME COLUMN animals_id TO animal_id;
 ALTER TABLE visits RENAME COLUMN vets_id TO vet_id;
+
+-- Create Index on animal_id column of visits table.
+CREATE INDEX animals_id_asc ON visits(animals_id asc);
+
+-- Create Index on vet_id column of visits table.
+CREATE INDEX  vets_id_asc ON visits(vets_id asc);
+
+-- Create Index  owners_email on email column of owners table.
+CREATE INDEX  owners_email  ON owners(email);
