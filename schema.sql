@@ -57,3 +57,9 @@ ALTER TABLE visits
 ALTER TABLE specializations
  ADD FOREIGN KEY (species_id)  REFERENCES species (id);
  ADD FOREIGN KEY (vets_id)  REFERENCES vets (id);
+
+ -- Add new column to owners table.
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+ALTER TABLE visits RENAME COLUMN animals_id TO animal_id;
+ALTER TABLE visits RENAME COLUMN vets_id TO vet_id;
